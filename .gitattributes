@@ -1,0 +1,56 @@
+# ✅ Ensure all common language files are counted in GitHub language stats
+
+*.py linguist-detectable=true
+*.js linguist-detectable=true
+*.ts linguist-detectable=true
+*.jsx linguist-detectable=true
+*.tsx linguist-detectable=true
+*.java linguist-detectable=true
+*.c linguist-detectable=true
+*.cpp linguist-detectable=true
+*.h linguist-detectable=true
+*.cs linguist-detectable=true
+*.go linguist-detectable=true
+*.rs linguist-detectable=true
+*.php linguist-detectable=true
+*.rb linguist-detectable=true
+*.swift linguist-detectable=true
+*.kt linguist-detectable=true
+*.scala linguist-detectable=true
+*.dart linguist-detectable=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.scss linguist-detectable=true
+*.less linguist-detectable=true
+*.json linguist-detectable=true
+*.yml linguist-detectable=true
+*.yaml linguist-detectable=true
+*.xml linguist-detectable=true
+*.sh linguist-detectable=true
+*.bat linguist-detectable=true
+*.pl linguist-detectable=true
+*.lua linguist-detectable=true
+*.r linguist-detectable=true
+*.m linguist-detectable=true
+*.jl linguist-detectable=true
+*.sql linguist-detectable=true
+*.tsx linguist-detectable=true
+*.vue linguist-detectable=true
+*.tsx linguist-detectable=true
+*.zig linguist-detectable=true
+*.asm linguist-detectable=true
+
+# Exclude vendor/build/dependency folders from language stats
+node_modules/** linguist-vendored
+dist/** linguist-vendored
+build/** linguist-vendored
+out/** linguist-vendored
+coverage/** linguist-vendored
+venv/** linguist-vendored
+.env linguist-generated
+*.min.js linguist-generated
+*.lock linguist-generated
+package-lock.json linguist-generated
+yarn.lock linguist-generated
+pnpm-lock.yaml linguist-generated
+composer.lock linguist-generated
