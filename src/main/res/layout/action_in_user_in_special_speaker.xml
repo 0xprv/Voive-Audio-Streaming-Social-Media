@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/roundedBottomSheetPrimaryBackground"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visit Profile"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/themetextcolor"
+        android:fontFamily="@font/montr_bold"
+        android:letterSpacing="0.0002626"
+        android:textSize="20sp"
+        android:id="@+id/visit_profile"
+        app:iconSize="20dp"
+        app:iconTint="@color/allicontintcolor"
+        android:paddingStart="24dp"
+        android:textAlignment="textStart"
+        app:iconPadding="16dp"
+        android:textAllCaps="false"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ban"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/montr_bold"
+        android:letterSpacing="0.0002626"
+        android:textSize="20sp"
+        android:id="@+id/dismiss_table"
+        android:layout_marginBottom="16dp"
+        app:iconSize="20dp"
+        app:iconTint="@color/allicontintcolor"
+        android:paddingStart="24dp"
+        android:textAlignment="textStart"
+        app:iconPadding="16dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

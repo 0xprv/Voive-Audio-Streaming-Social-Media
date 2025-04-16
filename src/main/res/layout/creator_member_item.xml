@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clickable_part"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/rl"
+
+        android:animateLayoutChanges="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="90dp"
+            android:id="@+id/is_lv"
+            android:layout_height="90dp"
+            android:visibility="invisible"
+            android:src="@drawable/live_people_drawable"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:soundEffectsEnabled="true"
+            app:civ_border_color="@color/settingbuttonbackcoclor"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/first_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/themetextsecondarycolor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rl"
+        app:layout_constraintStart_toStartOf="@+id/rl"
+        app:layout_constraintTop_toBottomOf="@+id/rl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

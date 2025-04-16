@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="8dp"
+    android:id="@+id/clickable_part"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circular"
+            android:layout_width="140dp"
+            app:civ_border_overlay="true"
+            app:civ_border_color="@color/card_view_color"
+            app:civ_border_width="1dp"
+            android:src="@color/settingbuttonbackcoclor"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:paddingEnd="8dp"
+        android:ellipsize="end"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montr_bold"
+        android:lineSpacingExtra="0.1dp"
+        android:background="@drawable/shimmer_place_holder"
+        android:maxLines="2"
+        android:textColor="@color/themetextcolor"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout9"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout9" />
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/shimmer_place_holder"
+                android:layout_marginBottom="5dp"
+                android:maxLength="30"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montr_extrabold"
+                android:maxLines="1"
+                android:textColor="#2E7D32"
+                android:textSize="16sp" />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_subscriber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/shimmer_place_holder"
+            android:maxLength="50"
+            android:fontFamily="@font/montr_bold"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="13.5sp" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

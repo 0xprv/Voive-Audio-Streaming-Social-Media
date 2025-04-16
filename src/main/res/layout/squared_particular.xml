@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.03"
+        android:singleLine="true"
+        android:textColor="@color/themetextcolor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/see_all"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textAllCaps="false"
+        android:textColor="@color/themetextcolor"
+        android:textSize="16sp"
+        app:icon="@drawable/more_than"
+        app:iconSize="16dp"
+        app:iconTint="@color/themetextsecondarycolor" />
+
+
+</RelativeLayout>

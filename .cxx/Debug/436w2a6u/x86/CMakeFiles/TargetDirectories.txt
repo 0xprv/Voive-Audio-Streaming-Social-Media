@@ -1,0 +1,3 @@
+F:/AndroidStudioProjects/Voicedesk/app/.cxx/Debug/436w2a6u/x86/CMakeFiles/android.dir
+F:/AndroidStudioProjects/Voicedesk/app/.cxx/Debug/436w2a6u/x86/CMakeFiles/edit_cache.dir
+F:/AndroidStudioProjects/Voicedesk/app/.cxx/Debug/436w2a6u/x86/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_rounded_bottom_sheet"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:backgroundTint="@color/searchboxbackcolor"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:orientation="vertical">
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            app:rv_rippleDuration="100"
+            app:rv_color="#1A38A9EF"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/twitter"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#1A1DA1F2"
+                    android:elevation="0dp"
+                    android:paddingStart="18dp"
+                    app:cornerRadius="20dp"
+                    app:elevation="0dp"
+                    app:icon="@drawable/ic_share_twitter"
+                    app:iconSize="26dp"
+                    app:iconTint="#1DA1F2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:letterSpacing="0.03"
+                    android:text="Twitter"
+                    android:textColor="@color/themetextcolor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            app:rv_rippleDuration="100"
+            app:rv_color="#1A25D366"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/lr2"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:elevation="0dp"
+                    app:cornerRadius="20dp"
+                    android:id="@+id/whatsapp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    app:iconTint="#25D366"
+                    android:backgroundTint="#1A25D366"
+                    android:paddingTop="3dp"
+                    app:elevation="0dp"
+                    android:paddingStart="16dp"
+                    app:icon="@drawable/ic_share_whatsapp"
+                    app:iconSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textSize="18sp"
+                    android:text="Whatsapp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/themetextcolor"
+                    android:fontFamily="@font/nunito_bold"/>
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            app:rv_color="#1A0CFA8B"
+            app:rv_rippleDuration="100"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/copy_link"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#1A0CFA8B"
+                    android:elevation="0dp"
+                    android:paddingStart="18dp"
+                    app:cornerRadius="20dp"
+                    app:elevation="0dp"
+                    app:icon="@drawable/ic_link"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/colorAccent"
+              />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:letterSpacing="0.03"
+                    android:text="Copy Link"
+                    android:textColor="@color/themetextcolor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            app:rv_rippleDuration="100"
+            app:rv_color="#990277BD"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/message"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#990277BD"
+                    android:elevation="0dp"
+                    android:paddingStart="16dp"
+                    app:cornerRadius="20dp"
+                    app:elevation="0dp"
+                    app:icon="@drawable/ic_share_message"
+                    app:iconSize="30dp"
+                    app:iconTint="#fff"
+                 />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="SMS Message"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/themetextcolor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+
+
+    </LinearLayout>
+
+    <com.andexert.library.RippleView
+        android:layout_width="match_parent"
+        app:rv_rippleDuration="100"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lr5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/more"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#1C1C1C"
+                android:elevation="0dp"
+                android:paddingStart="16dp"
+                app:cornerRadius="20dp"
+                app:elevation="0dp"
+                app:icon="@drawable/more"
+                app:iconSize="30dp"
+                app:iconTint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunito_bold"
+                android:letterSpacing="0.03"
+                android:text="Share Via..."
+                android:textColor="@color/themetextcolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </com.andexert.library.RippleView>
+
+
+
+
+</LinearLayout>

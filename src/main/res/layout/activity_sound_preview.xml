@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".preview_of_talking_two_minutes"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="24dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/shimmer_place_holder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/shimmer_place_holder" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/shimmer_place_holder" />
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/settingbuttonbackcoclor"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+
+                app:cornerRadius="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </RelativeLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:id="@+id/main"
+      >
+
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:id="@+id/to_show"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/back"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="40dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="4dp"
+                        android:backgroundTint="@color/transparent"
+                        android:paddingStart="10dp"
+                        app:cornerRadius="100dp"
+                        app:icon="@drawable/drop"
+                        app:iconSize="20dp"
+                        app:iconTint="@color/allicontintcolor"
+                        app:rippleColor="@android:color/transparent" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/materialButton3"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:icon="@drawable/share_preview_icon"
+                        app:iconSize="22dp"
+                        app:iconTint="@color/allicontintcolor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/to_show">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:id="@+id/table_clickable"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="14dp"
+                        android:layout_height="20dp"
+                        app:icon="@drawable/up_vector"
+                        app:iconTint="@color/allicontintcolor"
+                        app:iconSize="12dp"
+                        android:paddingStart="0dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:id="@+id/tbl_nme"
+                        android:textColor="@color/themetextsecondarycolor"
+                        android:fontFamily="@font/nunito_bold"
+                        android:layout_marginTop="-10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/live_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/live_textboxstyle"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/live"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="14dp"
+                        android:layout_height="15dp"
+
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="1dp"
+                        android:paddingStart="0dp"
+                        android:paddingTop="4dp"
+                        app:icon="@drawable/ic_live"
+                        app:iconSize="14dp"
+                        app:iconTint="@color/live_red" />
+
+                    <TextView
+                        android:id="@+id/lv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="-13dp"
+                        android:fontFamily="@font/montr_bold"
+                        android:paddingStart="4dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/LIVE"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/deactivate_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montr_bold"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textColorLink="#0277BD"
+                    android:textAlignment="textStart"
+                    android:visibility="gone"
+                    android:textColor="@color/themetextcolor"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/tbl_conatainer"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="24dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="1dp"
+                                android:paddingStart="0dp"
+                                app:icon="@drawable/peoples_streaming"
+                                app:iconSize="21dp"
+                                app:iconTint="@color/themetextsecondarycolor" />
+
+                            <TextView
+                                android:id="@+id/subs_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="-10dp"
+                                android:fontFamily="@font/montr_semi"
+                                android:paddingEnd="2dp"
+                                android:paddingBottom="1dp"
+                                android:textColor="@color/themetextcolor"
+                                android:textSize="13sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/to_show">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="22dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="22dp" />
+
+                <TextView
+                    android:id="@+id/no_one_speaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:fontFamily="@font/montr_bold"
+                    android:text="@string/No_ONE_SPEAKING"
+                    android:textColor="@color/themetextsecondarycolor"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/image_gradient"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/clic_cir"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="50dp"
+                    android:elevation="0dp"
+                    app:elevation="0dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_height="20dp"
+                    android:paddingStart="18dp"
+                    app:iconTint="@color/themetextsecondarycolor"
+                    app:icon="@drawable/up_vector"
+                    app:iconSize="20dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_image"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="35dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/deactivate_message_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montr_bold"
+                android:paddingStart="8dp"
+                android:visibility="gone"
+                android:paddingEnd="6dp"
+                android:textAlignment="center"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="15sp" />
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/req"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#2633634D"
+                android:elevation="0dp"
+                android:fontFamily="@font/nunito_extrabold"
+                android:letterSpacing="0.05"
+                android:paddingStart="24dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="10dp"
+                android:text="@string/Subscribe"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="19sp"
+                app:finalCornerAngle="50dp"
+                app:initialCornerAngle="50dp"
+                app:spinning_bar_color="@color/colorAccent"
+                app:spinning_bar_padding="2dp"
+                app:spinning_bar_width="2dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

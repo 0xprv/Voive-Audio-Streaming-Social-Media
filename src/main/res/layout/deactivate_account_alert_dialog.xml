@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/alert_box_background"
+    android:stateListAnimator="@null">
+
+    <TextView
+        android:id="@+id/deactivate_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montr"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        android:text="Maximum People Speaking"
+        android:textAlignment="center"
+        android:textColor="@color/themetextcolor"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_to_deactivate"
+        android:fontFamily="@font/nunito_bold"
+        android:textAlignment="center"
+        android:id="@+id/deactivate_message_textview"
+        android:textColor="@color/themetextsecondarycolor"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/divider_color"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deactivate"
+        android:fontFamily="@font/nunito_bold"
+        android:textAllCaps="false"
+        android:letterSpacing="0.0002626"
+        android:textSize="20sp"
+        android:paddingTop="12dp"
+        android:textColor="@android:color/holo_red_light"
+        app:cornerRadius="8dp"
+        android:id="@+id/deactivate"
+        app:rippleColor="@android:color/transparent"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:paddingBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divider_color"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NO"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:fontFamily="@font/montr_extrabold"
+        android:textAllCaps="false"
+        android:letterSpacing="0.0002626"
+        android:textSize="18sp"
+        android:id="@+id/no"
+        android:paddingTop="12dp"
+        app:rippleColor="@android:color/transparent"
+        android:textColor="@color/themetextcolor"
+        app:cornerRadius="8dp"
+        android:paddingBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</LinearLayout>

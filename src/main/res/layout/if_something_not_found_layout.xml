@@ -1,0 +1,39 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/overlapping_panels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montr"
+            android:paddingStart="32sp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/themetextcolor"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/nunito_bold"
+            android:paddingStart="24dp"
+            android:lineSpacingExtra="-3dp"
+            android:paddingEnd="24dp"
+            android:letterSpacing="0.03"
+            android:textAlignment="center"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

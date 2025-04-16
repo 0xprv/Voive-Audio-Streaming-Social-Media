@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.voive.android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:appCategory="audio"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity
+            android:name=".recent_listened"
+            android:exported="false" />
+        <activity
+            android:name=".app_greeting"
+            android:exported="true"
+            android:theme="@style/My_THEME">
+
+        </activity>
+        <activity
+            android:name=".take_permission"
+            android:exported="false" />
+        <activity android:name=".handling_urls_activity">
+            <intent-filter android:label="Voive">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.voive.in"
+                    android:path="/tables/invites/"
+                    android:scheme="https" />
+                <data
+                    android:host="voive.in"
+                    android:path="/tables/invites/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".server_error"
+            android:exported="false" />
+        <activity
+            android:name=".no_network_activity"
+            android:exported="false"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".Nearby_conversation_in_mao"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".QR_OF_TABLE_SHARE"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".QR_SCAN"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".sound_preview"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".time_remain_to_live_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".mutual_tables_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".main_explore_page_of_app"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".creator_of_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".following_and_follower_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".particular_language"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".ban_peoples_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".table_setting_page"
+            android:theme="@style/My_THEME" />
+        <activity android:name=".backroom_call_activity" />
+        <activity
+            android:name=".from_conrtact_invite"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".nearby_tables"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".my_tables_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".my_invitation_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".invite_people_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".special_speaker_live_table"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity android:name=".all_tastes_of_table" />
+        <activity
+            android:name=".invitation_of_table_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".blocked_speakers" />
+        <activity
+            android:name=".search_in_table"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity android:name=".if_not_found_adapter" />
+        <activity
+            android:name=".when_taste_clicked_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".what_is_my_taste"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".report_account"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".user_QR_code"
+            android:theme="@style/My_THEME" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".zoom_image_viewer" />
+        <activity
+            android:name=".other_speaker_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".create_table_space"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".my_own_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".subscribed_table_activity"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".starting_language_picker"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".roundtble_login"
+            android:theme="@style/My_THEME" />
+
+        <receiver android:name=".backrrom_call_button" />
+
+        <activity
+            android:name=".change_language"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".manage_notification"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".pickingtopics" />
+        <activity
+            android:name=".settingpage"
+            android:theme="@style/My_THEME" />
+        <activity android:name=".pickingusername" />
+        <activity
+            android:name=".firstandlastname"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".sound_bite"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".OTPnumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".startingactivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SPLASh_THEME">
+
+        </activity>
+
+        <receiver android:name=".BACKROOM_RTC_ENGINE_NOTIFICATION_SERVICE" />
+
+        <activity
+            android:name=".phonenumberforotp"
+            android:screenOrientation="portrait"
+            android:theme="@style/My_THEME" />
+        <activity
+            android:name=".RECEIVE_IN_APP"
+            android:label="JUST"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".RECEIVE_IN_APP_CALL"
+            android:label="JUST_2"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SPLASh_THEME" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="517462011969" />
+
+        <service android:name="com.parse.fcm.ParseFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".message_button_receiver" />
+        <receiver android:name=".handlig_broadcast_receiver" />
+        <receiver android:name=".handlig_broadcast_receiver_backroom" />
+        <receiver android:name=".handlig_broadcast_receiver_canceling_notification" />
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".round_table_notification_service"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+                <action android:name="com.parse.push.intent.DELETE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".voice_mediaplayer_handler" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <receiver
+            android:name=".Network_change_listner"
+            android:label="Network_change_listner">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

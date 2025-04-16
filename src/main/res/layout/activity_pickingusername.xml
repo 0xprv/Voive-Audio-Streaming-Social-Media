@@ -1,0 +1,114 @@
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/dd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button12"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="37dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:visibility="visible"
+        app:icon="@drawable/drop"
+
+        app:iconSize="20dp"
+        app:iconTint="@color/allicontintcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Username"
+            android:fontFamily="@font/montr"
+            android:textColor="@color/themetextcolor"
+            android:textSize="32sp"/>
+
+        <EditText
+            android:id="@+id/otpnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="90xxxxxx"
+            android:background="@drawable/textboxbackstyle"
+            android:ems="10"
+            android:fontFamily="@font/nunito_bold"
+            android:hint="Username (Must Be Unique)*"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:paddingTop="6dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:maxLength="10"
+            android:paddingStart="16dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/themetextcolor"
+            android:textColorHint="@color/hintcolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ccp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textAlignment="center"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/login2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/nunito_bold"
+        android:letterSpacing="0.000002652"
+        android:text="@string/create_account"
+        android:paddingTop="8dp"
+        android:paddingBottom="11dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

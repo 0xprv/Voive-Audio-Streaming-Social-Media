@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:elevation="0dp"
+    android:paddingBottom="0dp"
+    android:id="@+id/nrby_container"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:id="@+id/clickable_part"
+        android:paddingBottom="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/suggested_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-8dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/montr_bold"
+                android:text="@string/Recent_Listened"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/see_all"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:paddingStart="3dp"
+                android:textAllCaps="false"
+                android:textColor="#ACABAB"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                app:icon="@drawable/more_broad"
+                app:iconSize="10dp"
+                app:iconTint="#686868" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:id="@+id/how_many"
+            android:textColor="#989797"
+            android:text="####"
+            android:fontFamily="@font/montr_semi"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/if_not"
+            android:background="@drawable/dotted_drawable"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:visibility="gone"
+            android:paddingTop="16dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="12dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_conv"
+                android:text="@string/no_recent_conv"
+                android:fontFamily="@font/montr_semi"
+                android:textColor="#B3B2B2"
+                android:textAlignment="center"
+                android:layout_marginStart="32dp"
+                android:textSize="13sp"
+                android:layout_marginEnd="32dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/create_account"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:fontFamily="@font/montr_bold"
+                android:letterSpacing="0.0002552"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                app:icon="@drawable/next_step_icon"
+                app:iconSize="20dp"
+                app:iconTint="@color/colorAccent"
+                android:paddingEnd="24dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:backgroundTint="#2633634D"
+                android:paddingBottom="10dp"
+                android:text="@string/Find_conv"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                app:cornerRadius="24dp"
+                app:elevation="0dp"
+                app:iconPadding="16dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/container_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_base_alpha="0.3"
+            app:shimmer_shape="radial"
+            app:shimmer_duration="1500"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="160dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardBackgroundColor="@color/settingbuttonbackcoclor"
+                        app:cardCornerRadius="5dp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="160dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardBackgroundColor="@color/settingbuttonbackcoclor"
+                        app:cardCornerRadius="5dp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="160dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardBackgroundColor="@color/settingbuttonbackcoclor"
+                        app:cardCornerRadius="5dp"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="160dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardBackgroundColor="@color/settingbuttonbackcoclor"
+                        app:cardCornerRadius="5dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

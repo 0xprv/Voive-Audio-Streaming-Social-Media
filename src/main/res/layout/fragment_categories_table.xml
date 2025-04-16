@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".suggestedtables">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shimmer"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/other_shimmer_layout"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/table_recyler"
+        android:layout_width="match_parent"
+        android:paddingEnd="14dp"
+        android:paddingTop="20dp"
+        android:paddingStart="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
+
+
+</LinearLayout>

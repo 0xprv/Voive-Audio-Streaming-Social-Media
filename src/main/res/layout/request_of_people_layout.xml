@@ -1,0 +1,109 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_marginStart="12dp"
+    app:cardCornerRadius="0dp"
+    android:layout_marginTop="12dp"
+    app:cardElevation="0dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/mainlanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/nunito_bold"
+            android:singleLine="true"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/themetextcolor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout12"
+            app:layout_constraintStart_toEndOf="@+id/circleImageView8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/table_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/table_name">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/reject_invitation"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="36dp"
+                android:layout_height="49dp"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/nunito_bold"
+                android:letterSpacing="0.000261515"
+                android:paddingStart="9dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="12dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/close_icon"
+                app:iconSize="18dp"
+                app:iconTint="@color/allicontintcolor" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider_color" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/acceept_invitation"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="36dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/nunito_bold"
+                android:letterSpacing="0.000261515"
+                android:paddingStart="9dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="12dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/accept_request"
+                app:iconSize="18dp"
+                app:iconTint="@color/allicontintcolor" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

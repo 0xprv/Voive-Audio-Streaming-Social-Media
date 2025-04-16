@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".create_table_space">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton4"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="35dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:icon="@drawable/drop"
+        app:iconSize="20dp"
+        app:backgroundTint="@color/card_view_color"
+        app:cornerRadius="100dp"
+        app:iconTint="@color/allicontintcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/start_table_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montr"
+
+        android:text="@string/start_table"
+        android:textAlignment="center"
+        android:textColor="@color/themetextcolor"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton4"/>
+
+    <TextView
+        android:id="@+id/be_a_creator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/be_a_creator"
+        android:textAlignment="center"
+        android:textColor="@color/themetextsecondarycolor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/start_table_textview"
+        app:layout_constraintTop_toBottomOf="@+id/start_table_textview" />
+
+    <com.xw.repo.widget.BounceScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/floating_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/be_a_creator">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/divider_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/table_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:fontFamily="@font/montr_bold"
+                    android:hint="@string/table_title"
+                    android:inputType="textPersonName"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:paddingStart="24dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="55dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/themetextcolor"
+                    android:textColorHint="@color/hintcolor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0.8dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/divider_color"/>
+                    <TextView
+                        android:id="@+id/counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montr_bold"
+                        android:text="25"
+                        android:textColor="@color/themetextcolor"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/divider_color" />
+            <EditText
+                android:id="@+id/table_descripton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:fontFamily="@font/montr_bold"
+                android:gravity="top"
+                android:hint="@string/TABLE_DESCRIPTION"
+                android:inputType="textMultiLine"
+                android:background="@color/transparent"
+                android:lines="6"
+                android:maxLines="6"
+                android:minLines="6"
+                android:paddingStart="24dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="8dp"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textColor="@color/themetextcolor"
+                android:textColorHint="@color/hintcolor" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/divider_color" />
+        </LinearLayout>
+    </com.xw.repo.widget.BounceScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/montr_bold"
+        android:letterSpacing="0.000002652"
+        android:text="@string/CREATE"
+        android:paddingTop="8dp"
+        android:paddingBottom="11dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:iconSize="24dp"
+        android:enabled="false"
+        app:iconGravity="end"
+        app:iconTint="@color/black_50"
+        android:textAllCaps="false"
+        android:textColor="@color/black_50"
+        android:textSize="20sp"
+        android:backgroundTint="@color/themetextsecondarycolor"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

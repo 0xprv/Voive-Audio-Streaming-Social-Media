@@ -1,0 +1,218 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".main_explore_page_of_app">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout10"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:paddingTop="60dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:clipToPadding="false"
+          android:orientation="vertical"
+          android:paddingEnd="8dp">
+
+        <include layout="@layout/other_shimmer_layout" />
+
+        <include layout="@layout/other_shimmer_layout" />
+
+        <include layout="@layout/other_shimmer_layout" />
+
+        <include layout="@layout/other_shimmer_layout" />
+
+        <include layout="@layout/other_shimmer_layout" />
+
+        <include layout="@layout/other_shimmer_layout" />
+
+      </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searcher_recyler"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/current_active_table_item_layout"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:paddingStart="8dp"
+        android:paddingTop="60dp"
+        android:paddingEnd="8dp" />
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        style="@android:style/Widget.Holo.Light.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout10"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#E61D1D1D"
+      android:orientation="vertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/close_button"
+          style="@style/Widget.MaterialComponents.Button.TextButton"
+          android:layout_width="35dp"
+          android:layout_height="47dp"
+          android:layout_marginStart="8dp"
+          android:paddingTop="4dp"
+          app:cornerRadius="100dp"
+          app:icon="@drawable/ic_dropvector"
+          app:iconSize="20dp"
+          app:iconTint="@color/allicontintcolor"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:rippleColor="@android:color/transparent" />
+
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="2dp"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ttl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_extrabold"
+            android:letterSpacing="0.03"
+            android:text="@string/Suggested_tables"
+            android:textColor="@color/themetextcolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/close_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/close_button" />
+
+        <TextView
+            android:id="@+id/tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montr_bold"
+            android:text="@string/tap_what_people_talk"
+            android:textAlignment="center"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="12sp"
+            android:visibility="gone" />
+      </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </LinearLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/first_time_swipe_right_constrain"
+      android:layout_width="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_height="0dp"
+      android:background="#8C0B0B0B"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <com.airbnb.lottie.LottieAnimationView
+          android:id="@+id/animation_view"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="16dp"
+          app:lottie_autoPlay="true"
+          app:lottie_loop="true"
+          app:lottie_rawRes="@raw/tap_here_lottie" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/montr_extrabold"
+          android:layout_marginEnd="16dp"
+          android:paddingStart="32dp"
+          android:text="Tap Here"
+          android:textColor="@color/themetextcolor"
+          android:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/deactivate_message_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="16dp"
+
+          android:fontFamily="@font/montr_semi"
+          android:paddingStart="32dp"
+          android:text="To Listen\n Conversation"
+          android:textAlignment="textEnd"
+          android:textColor="@color/themetextsecondarycolor"
+          android:textSize="12sp" />
+    </LinearLayout>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

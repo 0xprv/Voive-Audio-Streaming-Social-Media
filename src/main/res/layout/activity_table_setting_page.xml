@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    tools:context=".table_setting_page">
+
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="65dp"
+
+      android:background="@color/colorPrimary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:fitsSystemWindows="true">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/close_icon"
+        app:iconSize="24dp"
+        app:iconTint="@color/allicontintcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#eee" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montr"
+        android:text="@string/TABLE_SETTING"
+        android:textColor="@color/themetextcolor"
+        android:textSize="26sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tick"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cornerRadius="0dp"
+        android:layout_marginEnd="10dp"
+        app:icon="@drawable/ic_check_black_80dp"
+        android:visibility="invisible"
+        app:iconSize="28dp"
+        app:iconTint="@color/allicontintcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#eee" />
+    <View
+        android:id="@+id/divider17"
+        android:layout_width="0dp"
+        android:visibility="invisible"
+        android:layout_height="0.8dp"
+        android:background="@color/divider_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.xw.repo.widget.BounceScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:clipToPadding="false"
+      android:id="@+id/scroll"
+      android:background="@color/colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <FrameLayout
+          android:layout_width="wrap_content"
+
+          android:layout_gravity="center"
+          android:id="@+id/FRAME"
+          android:background="@drawable/ripple_circular"
+          android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@color/colorAccent"
+            android:id="@+id/table_image"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="#80121212"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+          android:src="@drawable/whisper_image"/>
+      </FrameLayout>
+
+
+
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/divider_color"
+          android:layout_marginTop="32dp"/>
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout9"
+          android:layout_width="match_parent"
+
+          android:background="@color/searchboxbackcolor"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/your_name">
+
+
+        <EditText
+            android:id="@+id/table_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints="@string/section_title"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:focusable="true"
+
+            android:fontFamily="@font/montr_semi"
+            android:hint="@string/Table_Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/themetextcolor"
+            android:textColorHint="@color/hintcolor" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/divider_color" />
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout8_0"
+          android:layout_width="match_parent"
+          android:background="@color/searchboxbackcolor"
+          android:layout_height="wrap_content"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+        <EditText
+            android:id="@+id/table_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/section_title"
+            android:background="@color/transparent"
+            android:ems="10"
+            android:focusable="true"
+            android:fontFamily="@font/montr_semi"
+            android:hint="@string/Table_Description"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:maxLines="10"
+            android:textSize="16sp"
+            android:minLines="4"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="top"
+            android:textColor="@color/themetextcolor"
+            android:textColorHint="@color/hintcolor" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/divider_color" />
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/TABLE_TIMMING"
+          android:id="@+id/table_timing_textview"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_marginStart="16dp"
+          app:layout_constraintTop_toTopOf="parent"
+          android:textColor="@color/themetextcolor"
+          android:fontFamily="@font/montr_bold"
+          android:textSize="17sp"
+          android:layout_marginTop="16dp"/>
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:layout_marginTop="16dp"
+          android:background="@color/divider_color" />
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout92"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/searchboxbackcolor"
+          app:layout_constraintTop_toBottomOf="@+id/weekdays">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/firstname"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textboxbackstyle"
+            android:fontFamily="@font/montr_semi"
+            android:hint="@string/starting_time"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="2dp"
+            android:letterSpacing="0.0002626"
+            android:textColor="@color/themetextcolor"
+            android:textColorHint="@color/hintcolor"
+            app:hintTextColor="@color/textboxbacktextcolor"
+            app:layout_constraintEnd_toStartOf="@+id/lastname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:letterSpacing="0.0002626"
+            android:textSize="18sp"
+            android:id="@+id/lastname"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/textboxbackstyle"
+            android:fontFamily="@font/montr_semi"
+            android:hint="@string/ending_time"
+            android:paddingStart="16dp"
+            android:textColor="@color/themetextcolor"
+            android:textColorHint="@color/hintcolor"
+            app:hintTextColor="@color/textboxbacktextcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/firstname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:layout_marginBottom="8dp"
+          android:background="@color/divider_color" />
+      <TextView
+          android:id="@+id/startang_and_ending_time_textview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:fontFamily="@font/sf_pro_text_medium"
+          android:textColor="@color/themetextsecondarycolor"
+          app:layout_constraintTop_toBottomOf="@+id/constraintLayout9" />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/transparent"
+          android:layout_marginTop="16dp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:id="@+id/table_type_des_time_textview"
+          android:layout_marginEnd="16dp"
+          android:visibility="gone"
+          android:text="This Starting and ending time show that when your table talking start and end"
+          android:fontFamily="@font/nunito_bold"
+          android:textColor="@color/themetextsecondarycolor"/>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/divider_color"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/table_taste_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="16dp"
+
+              android:fontFamily="@font/montr_bold"
+              android:text="@string/Categories"
+              android:textColor="@color/themetextcolor"
+              android:textSize="18sp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="15sp"
+              android:visibility="gone"
+              android:layout_marginStart="16dp"
+              android:fontFamily="@font/nunito_bold"
+              android:textColor="@color/themetextsecondarycolor"
+            android:id="@+id/which_cat"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button10"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="40dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:elevation="0dp"
+            app:cornerRadius="100dp"
+            app:elevation="0dp"
+            app:icon="@drawable/add_table"
+            app:iconSize="25dp"
+            app:iconTint="@color/allicontintcolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/transparent" />
+
+
+
+      </RelativeLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.8dp"
+          android:background="@color/divider_color"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/colorPrimary"
+          android:orientation="vertical">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingTop="16dp"
+
+            android:layout_height="90dp">
+
+
+          <RelativeLayout
+              android:id="@+id/linearLayout6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="16dp"
+              android:layout_marginStart="16dp"
+              android:orientation="horizontal"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/max_people_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montr_bold"
+                android:text="@string/max_people_no_people"
+                android:textColor="@color/themetextcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/how_integer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/nunito_bold"
+                android:text="25"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/themetextcolor"
+                android:textSize="16sp" />
+
+          </RelativeLayout>
+
+
+          <SeekBar
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:id="@+id/seekbar"
+              android:max="25"
+              android:min="1"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="16dp"
+              android:thumbTint="@color/themetextcolor"
+              android:progressBackgroundTint="@color/card_view_color"
+              android:secondaryProgressTint="@color/card_view_color"
+
+              android:progressTint="@color/themetextcolor"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:backgroundTint="@color/card_view_color"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/divider_color"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+
+            android:paddingTop="8dp"
+            android:layout_height="wrap_content">
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/private_switch_switch"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp" />
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginEnd="16dp"
+              android:layout_marginStart="16dp"
+              android:orientation="vertical"
+              app:layout_constraintEnd_toStartOf="@+id/private_switch_switch"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/private_table_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montr_bold"
+                android:text="@string/pruivate_table"
+                android:textColor="@color/themetextcolor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/private_table_des_textview"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/only_co_creator_invite_other_people"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="14sp" />
+
+
+          </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/request_to_join_switch"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp" />
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:orientation="vertical"
+              app:layout_constraintEnd_toStartOf="@+id/request_to_join_switch"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/invitation_table_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montr_bold"
+                android:text="@string/invitation_to_join"
+                android:textColor="@color/themetextcolor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/initation_des_textview"
+                android:fontFamily="@font/montr_semi"
+                android:text="@string/people_must_have_invitation"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="15sp" />
+
+
+          </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/sneaking_switch"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp"
+               />
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:orientation="vertical"
+              app:layout_constraintEnd_toStartOf="@+id/sneaking_switch"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <com.google.android.material.button.MaterialButton
+                  android:layout_width="35dp"
+                  android:layout_height="35dp"
+                app:icon="@drawable/ic_location"
+                app:iconTint="@color/white"
+                  android:paddingStart="4dp"
+                  app:iconSize="20dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"/>
+              <TextView
+                  android:id="@+id/sneaking_textview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/montr_bold"
+                  android:text="@string/Share_location"
+                  android:textColor="@color/themetextcolor"
+                  android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/sneaking_des_textview"
+                android:fontFamily="@font/montr_semi"
+                android:text="@string/ALLOW_SNEAKING_DES"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="15sp" />
+
+
+          </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content">
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/allow_media_switch"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp"
+              />
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:orientation="vertical"
+              app:layout_constraintEnd_toStartOf="@+id/allow_media_switch"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/allow_media_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/Allow_media"
+                android:textColor="@color/themetextcolor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/allow_media_des_textview"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/Allow_media_des"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="15sp" />
+
+
+          </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/speak_to_join_switch"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp" />
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12dp"
+              android:layout_marginStart="16dp"
+              android:orientation="vertical"
+              android:layout_marginEnd="16dp"
+              app:layout_constraintEnd_toStartOf="@+id/speak_to_join_switch"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/speak_table_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/everyone_can_talk"
+                android:textColor="@color/themetextcolor"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/speak_des_textview"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginTop="3dp"
+                android:text="@string/who_can_open_mic_or_not"
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="15sp" />
+
+
+          </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/who_can_speak_reative"
+            android:visibility="gone"
+            android:layout_height="60dp">
+
+          <TextView
+              android:id="@+id/who_can_speak_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="16dp"
+              android:fontFamily="@font/nunito_bold"
+              android:text="@string/spec_who_can_speak"
+              android:textColor="@color/themetextcolor"
+              android:textSize="20sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <com.google.android.material.button.MaterialButton
+              style="@style/Widget.MaterialComponents.Button.TextButton"
+              android:layout_width="53dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="12dp"
+              android:paddingTop="12dp"
+              app:icon="@drawable/more_than"
+              android:layout_marginBottom="16dp"
+              app:rippleColor="@android:color/transparent"
+              app:iconSize="22dp"
+              app:iconTint="@color/allicontintcolor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/purpose_of_table_relative"
+            android:layout_height="65dp">
+
+          <TextView
+              android:id="@+id/purpose_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="16dp"
+              android:fontFamily="@font/nunito_bold"
+              android:text="@string/purpose_of_table_title"
+              android:textColor="@color/themetextcolor"
+              android:textSize="21sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <com.google.android.material.button.MaterialButton
+              style="@style/Widget.MaterialComponents.Button.TextButton"
+              android:layout_width="53dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="8dp"
+              app:icon="@drawable/more_than"
+              android:paddingTop="12dp"
+              android:layout_marginBottom="16dp"
+              app:rippleColor="@android:color/transparent"
+              app:iconSize="22dp"
+              app:iconTint="@color/allicontintcolor" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/adult_content_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="12dp"
+              android:fontFamily="@font/nunito_bold"
+              android:text="@string/NSFW_CONV"
+              android:textColor="@color/themetextcolor"
+              android:textSize="20sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/adult_textview_description"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="16dp"
+              android:fontFamily="@font/nunito_bold"
+              android:text="If You Enable This . Subscriber Confirm 18+ Content form"
+              android:textColor="@color/themetextsecondarycolor"
+              android:textSize="15sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toStartOf="@+id/switch2"
+              app:layout_constraintStart_toStartOf="@+id/adult_content_textview"
+              app:layout_constraintTop_toBottomOf="@+id/adult_content_textview" />
+
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/switch2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/divider_color"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/allow_recording_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="12dp"
+              android:fontFamily="@font/montr_bold"
+              android:text="@string/allow_recording"
+              android:textColor="@color/themetextcolor"
+              android:textSize="18sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/allow_recording_des_textview"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="16dp"
+              android:fontFamily="@font/montr_semi"
+              android:text="@string/allow_recording_des"
+              android:textColor="@color/themetextsecondarycolor"
+              android:textSize="14sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toStartOf="@+id/allow_recording_switch"
+              app:layout_constraintStart_toStartOf="@+id/allow_recording_textview"
+              app:layout_constraintTop_toBottomOf="@+id/allow_recording_textview" />
+
+          <com.bitvale.switcher.SwitcherX
+              android:id="@+id/allow_recording_switch"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              app:switcher_icon_color="@color/card_view_color"
+              app:switcher_off_color="#424141"
+              app:switcher_on_color="@color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_alignParentEnd="true"
+              android:checked="false"
+              android:layout_marginEnd="16dp"
+              android:layout_marginTop="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/which_lang_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="12dp"
+              android:fontFamily="@font/montr_bold"
+              android:text="@string/speaking_language"
+              android:textColor="@color/themetextcolor"
+              android:textSize="20sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/whihc_lang_des"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="16dp"
+              android:fontFamily="@font/montr_semi"
+              android:text="@string/which_lng_des"
+              android:textColor="@color/themetextsecondarycolor"
+              android:textSize="15sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toStartOf="@+id/lng_spinner"
+              app:layout_constraintStart_toStartOf="@+id/which_lang_title"
+              app:layout_constraintTop_toBottomOf="@+id/which_lang_title" />
+
+
+          <Spinner
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:minWidth="100dp"
+              android:spinnerMode="dropdown"
+              android:id="@+id/lng_spinner"
+              app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+              app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="16dp"
+              app:layout_constraintTop_toTopOf="@+id/which_lang_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/invite_people_relative"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/invite_people"
+              style="@style/Widget.MaterialComponents.Button.TextButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginEnd="16dp"
+              android:fontFamily="@font/nunito_bold"
+              android:letterSpacing="0.00025151"
+              android:paddingStart="0dp"
+              android:text="@string/invite_peoples"
+              android:textAlignment="viewStart"
+              android:textAllCaps="false"
+              android:textColor="@color/themetextcolor"
+              android:textSize="21sp" />
+
+
+          <com.google.android.material.button.MaterialButton
+              style="@style/Widget.MaterialComponents.Button.TextButton"
+              android:layout_width="53dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              app:icon="@drawable/more_than"
+              app:rippleColor="@android:color/transparent"
+              app:iconSize="22dp"
+              app:iconTint="@color/allicontintcolor" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/divider_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ban_people_relative"
+            android:paddingBottom="16dp"
+            android:layout_height="50dp">
+
+          <TextView
+              android:id="@+id/bans_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginTop="14dp"
+              android:fontFamily="@font/montr_bold"
+              android:text="@string/BANNED_SPEAKER"
+              android:textColor="@color/themetextcolor"
+              android:textSize="18sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/divider_color"/>
+        <RelativeLayout
+            android:id="@+id/dismiss_table_relative"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="50dp">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dismiss_table_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montr_bold"
+                android:text="@string/dismiss_table"
+                android:textColor="#D14D67"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+          </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="18dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:fontFamily="@font/nunito_bold"
+              android:textColor="@color/themetextcolor"
+              android:text="Created At  " />
+
+          <com.github.curioustechizen.ago.RelativeTimeTextView
+              android:id="@+id/textView8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:layout_marginBottom="16dp"
+              android:fontFamily="@font/nunito_bold"
+              android:text="23/05/2022"
+              android:textColor="@color/themetextsecondarycolor" />
+
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+  </com.xw.repo.widget.BounceScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

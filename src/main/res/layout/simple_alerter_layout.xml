@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="18dp"
+    android:paddingStart="8dp"
+    android:id="@+id/back"
+    android:background="@drawable/alert_box_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montr_extrabold"
+        android:text="Pranav"
+        android:textColor="@color/themetextcolor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/des"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Requested You To Join in Your table Coding Bastard"
+        android:textColor="@color/themetextsecondarycolor"
+        app:layout_constraintEnd_toStartOf="@+id/circleImageView12"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/control_linear"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/des">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deactivate"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/nunito_bold"
+            android:letterSpacing="0.0002626"
+            android:paddingTop="5dp"
+            android:paddingBottom="7dp"
+            android:text="@string/ACCEPT"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:rippleColor="@android:color/transparent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/no"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/card_view_color"
+            android:fontFamily="@font/nunito_bold"
+            android:letterSpacing="0.0002626"
+            android:paddingStart="24dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="7dp"
+            android:text="@string/reject"
+            android:textAllCaps="false"
+            android:textColor="@color/themetextcolor"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:rippleColor="@android:color/transparent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

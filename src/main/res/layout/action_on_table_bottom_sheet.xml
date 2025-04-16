@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/roundedBottomSheetPrimaryBackground"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:backgroundTint="@color/card_view_color"/>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/live_red"
+        android:textAllCaps="false"
+        android:id="@+id/report_user"
+        android:text="Report"
+        app:icon="@drawable/ic_report_flag"
+        app:iconTint="@color/live_red"
+        app:iconSize="26dp"
+        app:iconPadding="16dp"
+        android:textSize="22sp"
+        android:letterSpacing="0.0000211515"
+        android:fontFamily="@font/nunito_bold"
+        android:textAlignment="textStart"
+        android:paddingStart="24dp"/>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

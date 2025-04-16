@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/bg"
+        android:layout_height="match_parent"
+        tools:context=".QR_OF_TABLE_SHARE">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="50dp"
+            android:id="@+id/image"
+            android:layout_centerInParent="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back2"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/drop"
+            app:iconSize="20dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/share"
+            app:icon="@drawable/share_preview_icon"
+            app:iconTint="@color/white"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:iconSize="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

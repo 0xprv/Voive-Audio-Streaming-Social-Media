@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:layout_goneMarginEnd="12dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="🎉"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="70sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="@string/NO_Subscriptions_yet"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/nunito_bold"
+            android:paddingStart="16dp"
+            android:lineSpacingExtra="-2dp"
+            android:paddingEnd="16dp"
+            android:text="@string/talk_anywhere_anoyone"
+            android:textAlignment="center"
+            android:textColor="@color/themetextcolor"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/i_have_invitation"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="68dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#2633634D"
+            android:elevation="0dp"
+            android:fontFamily="@font/montr_bold"
+            android:letterSpacing="0.0002552"
+            android:paddingStart="24dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="10dp"
+
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            app:cornerRadius="24dp"
+            app:elevation="0dp"
+            app:icon="@drawable/up_vector"
+            app:iconPadding="16dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/colorAccent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

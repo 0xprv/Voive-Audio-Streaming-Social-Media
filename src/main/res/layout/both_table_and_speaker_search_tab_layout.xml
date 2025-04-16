@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/transparent"
+        app:tabIndicatorAnimationDuration="@integer/blur_dialog_animation_duration"
+        app:tabIndicatorColor="@color/themetextcolor"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="0.5dp"
+
+        app:tabRippleColor="@color/themetextcolor"
+        app:tabSelectedTextColor="@color/themetextcolor"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@color/themetextsecondarycolor">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tables" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sepakers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speakers" />
+
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divider_color"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searcher_recyler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        style="@android:style/Widget.Holo.Light.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressTint="@color/themetextcolor" />
+
+
+</RelativeLayout>
+</LinearLayout>

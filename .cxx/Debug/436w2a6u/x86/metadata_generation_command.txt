@@ -1,0 +1,23 @@
+                    Executable : F:\Android\sdk\cmake\3.18.1\bin\cmake.exe
+arguments : 
+-HF:\AndroidStudioProjects\Voicedesk\app\src\main\cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=23
+-DANDROID_PLATFORM=android-23
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=F:\Android\sdk\ndk\23.1.7779620
+-DCMAKE_ANDROID_NDK=F:\Android\sdk\ndk\23.1.7779620
+-DCMAKE_TOOLCHAIN_FILE=F:\Android\sdk\ndk\23.1.7779620\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=F:\Android\sdk\cmake\3.18.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=F:\AndroidStudioProjects\Voicedesk\app\build\intermediates\cxx\Debug\436w2a6u\obj\x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=F:\AndroidStudioProjects\Voicedesk\app\build\intermediates\cxx\Debug\436w2a6u\obj\x86
+-DCMAKE_BUILD_TYPE=Debug
+-BF:\AndroidStudioProjects\Voicedesk\app\.cxx\Debug\436w2a6u\x86
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

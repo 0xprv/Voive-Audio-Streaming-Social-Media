@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/roundedBottomSheetPrimaryBackground"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="50dp"
+        android:layout_gravity="center"
+        app:rippleColor="@android:color/transparent"
+        android:layout_marginTop="16dp"
+        android:layout_height="18dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:backgroundTint="@color/card_view_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/divider_color"
+        android:layout_marginTop="16dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/visit_profile"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/themetextcolor"
+        android:fontFamily="@font/nunito_bold"
+        android:letterSpacing="0.0002626"
+        android:textSize="20sp"
+        android:id="@+id/invite_people"
+        android:layout_marginTop="16dp"
+        app:iconSize="20dp"
+        app:iconTint="@color/allicontintcolor"
+        android:paddingStart="24dp"
+        android:textAlignment="textStart"
+        app:iconPadding="16dp"
+        android:textAllCaps="false"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:paddingStart="24dp"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/appoint_as_co_creator"
+        app:iconPadding="16dp"
+        android:id="@+id/appoint_as_co_creator"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/nunito_bold"
+        android:lineSpacingExtra="0.00026262dp"
+        android:textAllCaps="false"
+        app:rippleColor="@android:color/transparent"
+        app:iconTint="@color/allicontintcolor"
+        android:textColor="@color/themetextcolor"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ban"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/nunito_bold"
+        android:letterSpacing="0.0002626"
+        android:textSize="20sp"
+        android:id="@+id/setting"
+        app:iconSize="20dp"
+        android:layout_marginTop="8dp"
+        app:iconTint="@color/allicontintcolor"
+        android:paddingStart="24dp"
+        android:textAlignment="textStart"
+        app:iconPadding="16dp"
+        android:textAllCaps="false"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/KICK"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="@font/nunito_bold"
+        android:letterSpacing="0.0002626"
+        android:textSize="20sp"
+        android:id="@+id/dismiss_table"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:iconSize="20dp"
+        app:iconTint="@color/allicontintcolor"
+        android:paddingStart="24dp"
+        android:textAlignment="textStart"
+        app:iconPadding="16dp"
+        android:textAllCaps="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/divider_color" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/AndroidStudioProjects/Voicedesk/app/.cxx/Debug/436w2a6u/x86",
+  "command": "F:\\Android\\sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android23 --gcc-toolchain=F:/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dandroid_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\android.dir\\android.cpp.o -c F:\\AndroidStudioProjects\\Voicedesk\\app\\src\\main\\cpp\\android.cpp",
+  "file": "F:\\AndroidStudioProjects\\Voicedesk\\app\\src\\main\\cpp\\android.cpp"
+}
+]

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mdtp_white">#ffffff</color>
+    <color name="mdtp_background_color">@color/mdtp_white</color>
+    <color name="mdtp_circle_background">@color/mdtp_background_color</color>
+    <color name="mdtp_circle_color">#f5f5f5</color>
+    <color name="mdtp_line_background">#cccccc</color>
+    <color name="mdtp_ampm_text_color">@color/mdtp_numbers_text_color</color>
+    <color name="mdtp_done_text_color_normal">#ff212121</color>
+    <color name="mdtp_done_text_color_disabled">#cccccc</color>
+    <color name="mdtp_numbers_text_color">#ff212121</color>
+
+    <color name="colorPrimary">#121212</color>
+    <color name="alert_color">#171717</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#0CFA8B</color>
+    <color name="white">#fff</color>
+    <color name="red">#FF0000</color>
+    <color name="themecolor">#121212</color>
+    <color name="TAB_COLOR">#fff</color>
+    <color name="splash_color">#121212</color>
+    <color name="feedbackcolor">#121212</color>
+    <color name="themetextcolor">#F8F7F7</color>
+
+
+    <color name="gph_channel_color_dark">#ffD8D8D8</color>
+    <color name="gph_handle_bar_dark">#434343</color>
+    <color name="gph_background_dark">#000000</color>
+    <color name="gph_text_color_dark">#ffA6A6A6</color>
+    <color name="gph_active_text_color_dark">#fff</color>
+
+
+    <color name="overlay">#BF000000</color>
+    <color name="themetextsecondarycolor">#BEBEBE</color>
+    <color name="textboxkabackcolor">#3D3D3D</color>
+    <color name="premium_text_color">#03ACA8</color>
+    <color name="settingbuttonbackcoclor">#3A3A3A</color>
+    <color name="gold_color">#FFD700</color>
+    <color name="silver_code">#C0C0C0</color>
+    <color name="sync_contact_back">#202020</color>
+    <color name="when_bottom_icon_tap">#2979FF</color>
+    <color name="shout_out_color">#E34112</color>
+    <color name="againstorfavourcolor">#1F1F1F</color>
+    <color name="bottm_live_conatiner_gradient">#B3222222</color>
+    <color name="main_feed_back_color">#2f3136</color>
+    <color name="main_feed_back_dark_color">#202225</color>
+    <color name="textboxbacktextcolor">#C4C4C4</color>
+    <color name="bottm_live_conatiner">#222222</color>
+    <color name="play_pause_button_tint">#ffffff</color>
+    <color name="divider_color">#202020</color>
+    <color name="bottom_shett_control_color">#222222</color>
+    <color name="circle_color">#242424</color>
+    <color name="cicle_control_color">#3D3D3D</color>
+    <color name="bottom_button_color">#3D3D3D</color>
+    <color name="card_view_color">#151515</color>
+    <color name="both_bottom_nav_and_status_bar">#222222</color>
+    <color name="roundedBottomSheetPrimaryBackground">#171717</color>
+    <color name="allicontintcolor">#FFFFFF</color>
+    <color name="roundedBottomSheetPrimaryNavigationBarColor">#171717</color>
+    <color name="seekbarprogresstinit">#F1F1F1</color>
+    <color name="searchboxbackcolor">#1D1D1D</color>
+    <color name="type_selection_color">#388E3C</color>
+    <color name="agora_blue">#FF00A0EB</color>
+
+    <color name="lightColorAccent">#30FF4081</color>
+
+    <color name="dark_black">#CC262626</color>
+
+    <color name="transparent_75_white">#ACFFFFFF</color>
+
+    <color name="dark_gray">#FF55585A</color>
+
+    <color name="duration_color">#ffffff</color>
+    <color name="navigation_bar_color">#191919</color>
+    <color name="start_nav_color">#121212</color>
+    <color name="status_bar_color">#000000</color>
+    <color name="logoutcolor">#F14343</color>
+    <color name="hintcolor">#BDBDBD</color>
+    <color name="bottomiconunselectedcolor">#868686</color>
+
+
+    <!-- Dracula Theme -->
+    <color name="dracula_primary">#000000</color>
+    <color name="dracula_primary_dark">#000000</color>
+
+    <color name="dracula_album_popup_bg">#000000</color>
+    <color name="dracula_album_dropdown_title_text">#FFFFFF</color>
+    <color name="dracula_album_dropdown_count_text">#FFFFFF</color>
+    <color name="dracula_album_dropdown_thumbnail_placeholder">#000000</color>
+    <color name="dracula_album_empty_view">#4DFFFFFF</color>
+
+    <color name="dracula_item_placeholder">#000000</color>
+    <color name="dracula_item_checkCircle_backgroundColor">#263237</color>
+    <color name="dracula_item_checkCircle_borderColor">#FFFFFF</color>
+    <color name="dracula_capture">#FFFFFF</color>
+
+    <color name="dracula_page_bg">#000000</color>
+    <color name="dracula_bottom_toolbar_bg">#000000</color>
+
+    <color name="dracula_bottom_toolbar_preview_text">#DEFFFFFF</color>
+    <color name="dracula_bottom_toolbar_preview_text_disable">#4DFFFFFF</color>
+    <color name="dracula_bottom_toolbar_apply_text">#FFF</color>
+    <color name="dracula_bottom_toolbar_apply_text_disable">#B3C5C5C5</color>
+
+    <color name="dracula_preview_bottom_toolbar_back_text">#FFFFFF</color>
+    <color name="dracula_preview_bottom_toolbar_apply_text">#FFF</color>
+    <color name="dracula_preview_bottom_toolbar_apply_text_disable">#B3C5C5C5</color>
+</resources>

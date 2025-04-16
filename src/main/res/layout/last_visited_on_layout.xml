@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/constraintLayout"
+    android:paddingEnd="10dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="160dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="6dp">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="160dp">
+
+
+
+                <ImageView
+                    android:id="@+id/is_lv"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="160dp"
+                    android:background="#26000000"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/outlined_drawable"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+        <FrameLayout
+            android:layout_width="70dp"
+            android:id="@+id/frame"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="70dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avtar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RelativeLayout
+                android:id="@+id/is_live_relative"
+                android:layout_width="70dp"
+                android:visibility="gone"
+                android:layout_height="70dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:src="#80151515"
+                    app:civ_border_color="#3E3F40"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_live" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="2dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montr_bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingEnd="16dp"
+            android:textColor="@color/themetextcolor"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/avtar"
+            app:layout_constraintTop_toTopOf="@+id/avtar" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="5dp"
+
+            android:layout_marginTop="0dp"
+            android:src="@drawable/doted_lines_drawable" />
+        <TextView
+            android:id="@+id/sr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montr_bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/themetextsecondarycolor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/avtar"
+            app:layout_constraintTop_toTopOf="@+id/avtar" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

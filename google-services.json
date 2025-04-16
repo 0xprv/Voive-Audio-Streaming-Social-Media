@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "517462011969",
+    "project_id": "voive-1",
+    "storage_bucket": "voive-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517462011969:android:921087960eb72234bd56c0",
+        "android_client_info": {
+          "package_name": "com.voive.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517462011969-v5b30iblo9a186b1mi28iivbsofuvadi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.voive.android",
+            "certificate_hash": "676b72fcbdd72481daf5ea0578eba62cc32c4fe0"
+          }
+        },
+        {
+          "client_id": "517462011969-psab6rn38t29ni2rl8nmtdn4nnsdgi7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkgPGUe0YWcrrDk0UvPVDE47oUDm3cmDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517462011969-psab6rn38t29ni2rl8nmtdn4nnsdgi7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

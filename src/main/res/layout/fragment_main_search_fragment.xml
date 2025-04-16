@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main_search_fragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".new_search_activity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:background="@color/navigation_bar_color"
+            android:paddingBottom="8dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/back3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/textboxbackstyle"
+                    android:drawableLeft="@drawable/edittext_left_search_drawable"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:hint="@string/Search_Voive"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textPersonName"
+                    android:paddingStart="16dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/themetextcolor"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/clear_text"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone"
+                    app:icon="@drawable/close_icon"
+                    app:iconSize="18dp"
+                    app:iconTint="@color/themetextsecondarycolor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rippleColor="@color/transparent" />
+            </RelativeLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back3"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/material_mic"
+                app:iconSize="29dp"
+                app:iconTint="@color/themetextcolor"
+                app:layout_constraintBottom_toBottomOf="@+id/rl"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/qr"
+                app:layout_constraintTop_toTopOf="@+id/rl"
+                app:rippleColor="@color/gph_transparent" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/qr"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="43dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                app:icon="@drawable/qr_vector"
+                android:layout_marginEnd="8dp"
+                app:iconSize="22dp"
+                app:iconTint="@color/allicontintcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="@android:color/transparent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/if_not_any"
+                android:layout_marginStart="60dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/s_conv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montr_extrabold"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/Search_for_conv"
+                    android:textColor="@color/themetextcolor"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/part_of_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="14dp"
+                    android:fontFamily="@font/montr_semi"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/and_be_part_of_them"
+                    android:textAlignment="center"
+                    android:textColor="@color/themetextsecondarycolor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:id="@+id/when_s_happening"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/searcher_recyler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingStart="12dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbProgress"
+                        style="@android:style/Widget.Holo.Light.ProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:progressTint="@color/themetextcolor" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

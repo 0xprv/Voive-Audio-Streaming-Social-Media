@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".time_remain_to_live_activity">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        app:icon="@drawable/drop"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:iconTint="@color/allicontintcolor"
+        app:rippleColor="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/close"
+        app:iconSize="20dp"
+        android:paddingStart="10dp"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setting"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/setting"
+        app:iconSize="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:iconTint="@color/allicontintcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/will_live_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montr_bold"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/themetextsecondarycolor"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montr_extrabold"
+        android:textAlignment="center"
+        android:textColor="@color/themetextcolor"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/will_live_on" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:civ_border_color="@color/divider_color"
+        app:civ_border_width="1dp"
+        android:id="@+id/circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:blurkit="http://schemas.android.com/tools"
+    android:paddingEnd="14dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/clickable_part"
+    android:background="@color/colorPrimary">
+
+
+
+    <FrameLayout
+        android:layout_width="225dp"
+        android:id="@+id/frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="225dp">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avtar"
+            android:layout_width="220dp"
+            android:src="@drawable/main_placeholder"
+            android:layout_height="220dp"
+            app:civ_border_color="#222323"
+            app:civ_border_width="1dp"
+            app:civ_border_overlay="true"
+         />
+        <RelativeLayout
+            android:id="@+id/is_live_relative"
+            android:layout_width="225dp"
+            android:visibility="gone"
+            android:layout_height="225dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="225dp"
+                android:layout_height="225dp"
+                android:layout_centerInParent="true"
+                android:src="#80151515"
+                app:civ_border_color="#3E3F40"
+                app:civ_border_overlay="true"
+                app:civ_border_width="1dp" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_live" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        android:fontFamily="@font/montr_bold"
+        android:maxLines="2"
+        android:letterSpacing="0.012"
+        android:textColor="@color/themetextsecondarycolor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/frame"
+        app:layout_constraintTop_toBottomOf="@+id/xx" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/xx"
+        android:paddingTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/montr_extrabold"
+            android:maxLines="2"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/themetextcolor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_goneMarginBottom="12dp" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

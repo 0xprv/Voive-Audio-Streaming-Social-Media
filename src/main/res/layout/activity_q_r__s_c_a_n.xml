@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QR_SCAN">
+
+
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="false"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="false"
+        app:frameColor="@android:color/white"
+        app:frameCornersSize="50dp"
+        app:frameCornersCapRounded="true"
+        app:frameCornersRadius="24dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1"
+        app:frameSize="0.85"
+        app:frameThickness="2dp"
+        app:maskColor="#59000000"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/i_have_invitation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#1A000000"
+        android:fontFamily="@font/montr_bold"
+        android:letterSpacing="0.02662"
+        android:paddingStart="32dp"
+        android:paddingTop="6dp"
+
+        android:paddingEnd="32dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="50dp"
+        android:text="Select From Device"
+        android:textAllCaps="false"
+        android:textColor="@color/themetextcolor"
+        android:textSize="14sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back2"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/close_icon"
+            app:iconSize="24dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/i_have_invitation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montr_bold"
+                android:letterSpacing="0.02"
+                android:text="Scan Conversation QR Code"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montr_semi"
+                android:letterSpacing="0.02"
+                android:text="~~or~~"
+                android:textAlignment="center"
+
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="18sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montr_bold"
+                android:letterSpacing="0.02"
+                android:text="Select From Your Device"
+                android:textAlignment="center"
+
+                android:textColor="@color/themetextsecondarycolor"
+                android:textSize="17sp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
